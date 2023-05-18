@@ -57,9 +57,10 @@ do
 	}
     Console.WriteLine("Such a cool car. Thank you, our Finance Department will be in touch with you shortly.");
     Car.Remove(input, Car.CarsList);
-    Console.WriteLine("Would you like to purchase another car? (y/n)");
+   
+	Console.WriteLine("Would you like to purchase another car? (y/n)");
     string answer = Console.ReadLine();
-	if (answer.ToLower() == "n")
+	if (answer.ToLower().Trim() == "n")
 	{
 		Console.WriteLine("Thank you for shopping with us today!");
 		isDoneShopping = true;
